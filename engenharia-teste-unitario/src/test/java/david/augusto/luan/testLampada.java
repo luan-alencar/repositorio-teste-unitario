@@ -22,8 +22,12 @@ public class testLampada {
 
     @Test
     public void testSetNome() {
+        // aqui define um nome para o obj l que representa a Classe Lampada
         Lampada l = new Lampada("Quarto");
+        // em seguida modifica sem nome
         l.setNome("Garagem");
+        // em sequencia testa se o nome atual foi realmente modificado
+        // verificando se "Garagem" e igual ao nome do obj l recentemente setado
         assertEquals("Garagem", l.getNome());
     }
 }
