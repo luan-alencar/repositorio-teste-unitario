@@ -30,4 +30,12 @@ public class testLampada {
         // verificando se "Garagem" e igual ao nome do obj l recentemente setado
         assertEquals("Garagem", l.getNome());
     }
+
+    @Test
+    public void testEquals(){
+        Lampada quarto = new Lampada();
+        Lampada sala = new Lampada();
+        assertEquals(quarto, sala);
+    }
+
 }

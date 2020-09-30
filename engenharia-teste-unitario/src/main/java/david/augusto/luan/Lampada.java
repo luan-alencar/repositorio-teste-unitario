@@ -22,6 +22,10 @@ public class Lampada {
         }
     }
 
+    public Lampada() {
+        super();
+    }
+
     public boolean isLigada() {
         return this.ligada;
     }
@@ -32,5 +36,30 @@ public class Lampada {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    // implementei o metodo equals()
+    public boolean equals(Object obj) {
+        // se o obj for vazio retorn falso
+        if (obj == null) {
+            return false;
+        }
+        // criei uma variavel do tipo Lampada
+        Lampada comparavel;
+        // se o obj for uma instancia da classe Lampada
+        if (obj instanceof Lampada) {
+            // a variavel comparavel recebe aquele obj
+            comparavel = (Lampada) obj;
+        } else {
+            // se nao, retorne falso
+            return false;
+        }
+        // se os atributos do obj contido na variavel comparavel forem iguais ao
+        // do atributo daquele obj retorn true
+        if (comparavel.nome == this.nome && comparavel.ligada == this.ligada) {
+            return true;
+        }
+        // se nao, retorne falso
+        return false;
     }
 }

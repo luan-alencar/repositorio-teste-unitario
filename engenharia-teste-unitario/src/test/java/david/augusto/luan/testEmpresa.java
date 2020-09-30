@@ -22,5 +22,4 @@ public class testEmpresa {
         // verificando se o obj "e" e igual a sequencia de caracteres "Accenture"
         assertEquals("Accenture", e.getNome());
     }
-
 }
