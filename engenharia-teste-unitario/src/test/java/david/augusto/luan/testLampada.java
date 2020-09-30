@@ -33,8 +33,11 @@ public class testLampada {
 
     @Test
     public void testEquals(){
+        // instanciei um obj que representa Lampada
         Lampada quarto = new Lampada();
+        // instanciei outro obj que tb representa Lampada
         Lampada sala = new Lampada();
+        // comparacao se ambos representam a classe Lampada
         assertEquals(quarto, sala);
     }
 
